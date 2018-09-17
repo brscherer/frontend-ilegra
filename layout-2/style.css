@@ -1,0 +1,49 @@
+html, body {
+	margin: 0;
+}
+
+.container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-template-rows: 150px auto 100px 100px;
+	grid-template-areas:
+		'nav header'
+		'nav article'
+		'nav ads'
+		'nav footer';
+}
+
+.container > * {
+	background: #A0CF00;
+	padding: 20px;
+}
+
+nav {
+	grid-area: nav;
+	margin-right: 10px;
+}
+
+header {
+	grid-area: header;
+	margin-bottom: 10px;
+}
+
+article {
+	grid-area: article;
+	margin-bottom: 10px;
+}
+
+.ads {
+	grid-area: ads;
+	margin-bottom: 10px;
+}
+
+footer {
+	grid-area: footer;
+}
+
+
+
+
+
