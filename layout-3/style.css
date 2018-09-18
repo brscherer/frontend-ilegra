@@ -1,0 +1,63 @@
+html, body {
+	margin: 0;
+}
+
+.container {
+	height: 100vh;	
+}
+
+.container > * {
+	font-family: sans-serif;
+}
+
+header {
+	font-size: 35px;
+	background: red;
+	color: white;
+	padding: 24px;
+
+}
+
+nav {
+	background: blue;
+	padding: 16px 24px;
+
+}
+
+nav > a {
+	color: white;
+	text-decoration: none;
+	margin-right: 24px;
+	font-weight: bold;
+}
+
+nav > a:hover {
+	color: lightblue;
+}
+
+article {
+	width: 70%;
+	float: left;
+	padding: 0 24px;
+	margin-bottom: 50px;
+}
+
+article > h2 {
+	font-size: 30px;
+}
+
+aside {
+	width: 20%;
+	border: 1px solid;
+	float: right;
+	margin: 24px;
+	padding: 0 16px;
+}
+
+footer {
+	background: lightgray;
+	width: 100%;
+	float: left;
+	padding: 0 24px;
+
+}
