@@ -3,6 +3,7 @@ html, body {
 	height: 100vh;
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 	line-height: 1.5;
+	font-size: 14px;
 }
 
 header {
@@ -252,6 +253,161 @@ header {
 	fill: currentColor;
 	margin: 2px 8px 0 0;
 	float: left;
+}
+
+.main-content {
+	display: flex;
+	min-height: 100vh;
+	background-color: #f6f8fa;
+}
+
+.feed {
+	padding: 0 16px;
+	margin: 16px 0;
+	flex: 1 1 auto;
+}
+
+.feed-item {
+	display: flex;
+	padding: 16px 0 26px 0;
+	border-bottom: 1px #e1e4e8 solid;
+}
+
+.feed-item img {
+	margin-right: 16px;
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+}
+
+.feed-info {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	position: relative;
+	top: 10px;
+}
+
+.info-description a {
+	color: #24292e;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.info-description a:hover {
+	color: #0366d6;
+}
+
+.info-time {
+	color: #6a737d;
+	font-size: 12px;
+	margin-left: 4px;
+}
+
+.info-box {
+	padding: 16px;
+	margin-top: 8px;
+	background-color: #fff;
+	border: 1px solid #d1d5da;
+	border-radius: 3px;
+}
+
+.info-box > div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.info-box a {
+	color: #24292e;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.25;
+}
+
+.info-box a:hover {
+	color: #0366d6;
+}
+
+.info-box button {
+	color: #24292e;
+	background-color: #eff3f6;
+	background-image: linear-gradient(-180deg,#fafbfc 0%,#eff3f6 90%);
+	position: relative;
+	display: flex;
+	font-weight: 600;
+	white-space: nowrap;
+	cursor: pointer;
+	border: 1px solid rgba(27,31,35,0.2);
+	border-radius: 0.25em;
+	padding: 3px 10px;
+	font-size: 12px;
+	height: 30px;
+}
+
+.info-box svg {
+	width: 16px;
+	height: 16px;
+	margin-right: 4px;
+}
+
+.info-box p {
+	margin: 8px 0 0 0;
+	font-size: 12px;
+	color: #586069;
+}
+
+.tips {
+	font-size: 12px;
+	margin: 24px 0 0 0;
+	color: #586069;
+}
+
+.tips svg {
+	width: 16px;
+	height: 16px;
+	fill: currentColor;
+	vertical-align: text-bottom;
+}
+
+.tips a {
+	color: #0366d6;
+	text-decoration: none;
+}
+
+.tips a:hover {
+	text-decoration: underline;
+}
+
+.subscribe {
+	color: #586069 !important;
+}
+
+.subscribe:hover {
+	color: #0366d6 !important;
+	text-decoration: underline;
+}
+
+footer {
+	margin: 32px 0;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	columns: 3;
+}
+
+footer a {
+	font-size: 12px;
+	color: #586069 !important;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #0366d6 !important;
+	text-decoration: underline;
 }
 
 .hide-sm {
