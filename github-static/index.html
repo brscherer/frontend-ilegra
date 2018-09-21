@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -49,24 +50,46 @@
 						</svg>
 					</a>
 				</div>
-				<div class="btn-add hide-sm">
+				<div class="btn-add hide-sm" data-toggle="dropdown-add">
 					<svg viewBox="0 0 12 16" version="1.1" aria-hidden="true">
 						<path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z">
 						</path>
 					</svg>
-					<span class="dropdown"></span>
+					<span class="dropdown-carret"></span>
+					<div id="dropdown-add" class="dropdown">
+						<ul>
+							<li class="dropdown-items">New repository</li>
+							<li class="dropdown-items">Import repository</li>
+							<li class="dropdown-items">New gist</li>
+							<li class="dropdown-items">New organization</li>
+						</ul>
+					</div>
 				</div>
-				<div class="menu-user hide-sm">
+				<div class="menu-user hide-sm" data-toggle="dropdown-user">
 					<img src="https://avatars0.githubusercontent.com/u/23034493?s=40&v=4" class="user-icon">
-					<span class="dropdown"></span>
+					<span class="dropdown-carret"></span>
+					<div id="dropdown-user" class="dropdown">
+						<ul>
+							<li class="dropdown-header">Signed in as <b>brscherer</b></li>
+							<li class="dropdown-divider"></li>
+							<li class="dropdown-items">Your profile</li>
+							<li class="dropdown-items">Your repositories</li>
+							<li class="dropdown-items">Your stars</li>
+							<li class="dropdown-items">Your gists</li>
+							<li class="dropdown-divider"></li>
+							<li class="dropdown-items">Help</li>
+							<li class="dropdown-items">Settings</li>
+							<li class="dropdown-items">Sign out</li>
+						</ul>
+					</div>
 				</div>
 				<div class="menu hide-md">
-						<button type="button" aria-label="Toggle navigation" aria-expanded="true" data-toggle="menu-items">
-							<svg viewBox="0 0 12 16" version="1.1" aria-hidden="true">
-								<path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"></path>
-							</svg>
-						</button>
-					</div>
+					<button type="button" aria-label="Toggle navigation" aria-expanded="true" data-toggle="menu-items">
+						<svg viewBox="0 0 12 16" version="1.1" aria-hidden="true">
+							<path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"></path>
+						</svg>
+					</button>
+				</div>
 			</div>
 		</div>
 		<div id="menu-items" class="menu-items">
