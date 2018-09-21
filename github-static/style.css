@@ -15,7 +15,7 @@ header {
 .nav-container {
 	display: flex;
 	align-items: center;
-	justify-content: space-between !important;
+	justify-content: space-between !important; /* Evitar ao máximo o uso de '!importants', para evitar código perdido e não utilizado*/
 	position: relative;
 }
 
@@ -83,7 +83,7 @@ header {
 	vertical-align: middle;
 	content: "";
 	border: 4px solid;
-		border-right-color: currentcolor;
+		border-right-color: currentcolor; /* Cuidar identação do código */
 		border-bottom-color: currentcolor;
 		border-left-color: currentcolor;
 	border-right-color: transparent;
