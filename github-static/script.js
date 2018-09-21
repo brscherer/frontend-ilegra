@@ -9,6 +9,5 @@ elements.forEach( el => {
 		el.classList.toggle('actived');
 		target.classList.toggle('actived');
 
-		
 	});
 })

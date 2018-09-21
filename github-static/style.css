@@ -195,7 +195,7 @@ header {
 	display: block;
 	font-size: 14px;
 	padding: 8px 0;
-	font-weight: bold;
+	font-weight: 600;
 	color: #fff;
 }
 
@@ -242,7 +242,7 @@ header {
 
 .sign-out {
 	color: #fff;
-	font-weight: bold;
+	font-weight: 600;
 	font-size: 14px;
 	padding: 8px 0;
 	border: 0;
@@ -346,7 +346,7 @@ header {
 	color: #24292e;
 }
 
-.aside-repositories {
+.aside-repositories, .aside-teams {
 	border-bottom: 1px #e1e4e8 solid !important;
 }
 
@@ -355,10 +355,10 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	font-size: 14px;
-	font: bold;
+	font-weight: 600;
 	line-height: 1.5;
 	color: #24292e;
-	margin: 10px 0 20px 0;
+	margin: 10px 0;
 }
 
 .aside-btn {
@@ -414,7 +414,7 @@ header {
 	line-height: 1.5;
 	color: #0366d6;
 	margin: 0 0 10px 0;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 
@@ -423,6 +423,25 @@ header {
 	height: 16px;
 	fill: #6a737d;
 	margin-right: 4px;
+}
+
+.aside-list span:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.beta-info {
+	margin: 16px 0;
+	color: #586069;
+	font-size: 12px;
+}
+
+.beta-square {
+	border: 1px #34d058 solid;
+	border-radius: 3px;
+	display: inline-block;
+	line-height: 1.25;
+	padding: 0 4px;
 }
 
 .feed {
@@ -509,6 +528,13 @@ header {
 	height: 30px;
 }
 
+.info-box button:hover {
+	background-color: #e6ebf1;
+    background-image: linear-gradient(-180deg,#f0f3f6 0%,#e6ebf1 90%);
+    background-position: -0.5em;
+    border-color: rgba(27,31,35,0.35);
+}
+
 .info-box svg {
 	width: 16px;
 	height: 16px;
@@ -552,8 +578,118 @@ header {
 	text-decoration: underline;
 }
 
+.copyright {
+	display: flex;
+	align-items: center;
+	width: 30%;
+	float: left;
+}
+
+.aside-discover {
+	width: 300px;
+	flex-direction: column;
+	padding-right: 32px;
+	margin-top: 32px;
+}
+
+.aside-discover h4 {
+	font-weight: 600;
+	font-size: 14px;
+	margin: 0;
+}
+
+.discover-repository {
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 1px #e1e4e8 solid;
+}
+
+.discover-repository a {
+	font-weight: 600;
+	font-size: 12px;
+	color: #24292e;
+	text-decoration: none;
+}
+
+.discover-repository a:hover {
+	color: #0366d6;
+}
+
+.discover-repository p {
+	font-size: 12px;
+	margin: 0 0 8px 0;
+	color:  #586069;
+}
+
+.repository-infos {
+	display: flex;
+}
+
+.repository-language {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.language-color {
+	background-color: #f1e05a;
+	position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+	border-radius: 50%;
+	margin-right: 4px;
+}
+
+.language-name {
+	font-size: 12px;
+	font-weight: 400;
+	color: #586069;
+}
+
+.repository-stars {
+	font-size: 12px;
+	font-weight: 400;
+	color: #586069;
+	display: flex;
+	align-items: center;
+	margin-right: 4px;
+}
+
+.repository-stars svg {
+	width: 16px;
+	height: 16px;
+	fill: currentColor;
+}
+
+.discover-go {
+	color: #586069;
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.discover-go:hover {
+	color: #0366d6;
+}
+
 footer {
 	margin: 32px 0;
+	color: #6a737d;
+	font-size: 12px;
+}
+
+footer svg {
+	height: 24px;
+	width: 24px;
+	fill: #c6cbd1;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+footer svg:hover {
+	fill: #959da5;
 }
 
 footer ul {
@@ -564,7 +700,6 @@ footer ul {
 }
 
 footer a {
-	font-size: 12px;
 	color: #586069 !important;
 	text-decoration: none;
 }
@@ -614,6 +749,10 @@ footer a:hover {
 
 	.notifications a {
 		margin: 0;
+	}
+
+	.feed {
+		padding: 0 40px;
 	}
 	
 	.hide-md {
