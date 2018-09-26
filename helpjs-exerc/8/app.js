@@ -1,0 +1,1 @@
+document.getElementById('btn').addEventListener('click', () => alert(document.getElementById('cpf').value.replace(/\W/g, '')));
