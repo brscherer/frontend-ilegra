@@ -1,0 +1,54 @@
+html, body, .container {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.nav {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(0, 0, 0, 0.08); 
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-header {
+    background-color: #eeeeee;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon-header {
+    width: 40px;
+    height: 40px;
+}
+
+.header-actions {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-actions svg{
+    cursor: pointer;
+}
