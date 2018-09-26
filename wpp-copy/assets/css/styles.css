@@ -14,7 +14,7 @@ html, body, .container {
     width: 40%;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid rgba(0, 0, 0, 0.08); 
+    border-right: 1px solid #eeeeee;
 }
 
 header {
@@ -22,13 +22,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 16px;
+    box-sizing: border-box;
 }
 
 .nav-header {
     background-color: #eeeeee;
-    padding: 10px 16px;
-    display: flex;
-    align-items: center
+    border-bottom: 1px solid #eeeeee;
 }
 
 .user-icon {
@@ -51,4 +51,26 @@ header {
 
 .header-actions svg{
     cursor: pointer;
+}
+
+.nav-header-search {
+    width: 100%;
+    background-color: #fbfbfb;
+    padding: 7px 16px;
+    box-sizing: border-box;
+}
+
+.search-field {
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.search-field input{
+    border: 0;
+    width: 80%;
+    font-size: 12px;
 }
