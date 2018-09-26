@@ -11,7 +11,7 @@ html, body, .container {
 }
 
 .nav {
-    width: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     border-right: 1px solid #eeeeee;
@@ -44,7 +44,7 @@ header {
 }
 
 .header-actions {
-    width: 45%;
+    width: 35%;
     display: flex;
     justify-content: space-between;
 }
@@ -71,6 +71,6 @@ header {
 
 .search-field input{
     border: 0;
-    width: 80%;
+    width: 90%;
     font-size: 12px;
 }
