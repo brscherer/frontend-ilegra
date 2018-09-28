@@ -153,6 +153,13 @@ header, footer {
     max-width: 130px;
 }
 
+.conversation-empty {
+    padding: 50px;
+    text-align: center;
+    color: #929fa6;
+    font-size: 14px;
+}
+
 .content-conversation-messages {
     box-sizing: border-box;
     display: flex;
