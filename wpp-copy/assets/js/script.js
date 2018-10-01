@@ -34,8 +34,23 @@ let contact2 = {
     ]
 };
 
+let contact3 = {
+    name: 'Goku',
+    image: 'assets/images/goku.jpg',
+    messages: [
+        {
+            content: "Where are you?!",
+            time: new Date(),
+        },
+        {
+            content: "I need your help",
+            time: new Date(),
+        }
+    ]
+};
+
 let contactList = [
-    contact, contact2
+    contact, contact2, contact3
 ];
 
 const buildConversationsList = (contactList) => {
@@ -115,7 +130,7 @@ const buildConversationBoard = (contact) => {
 };
 
 const searchContact = (name) => {
-    return [contactList.find(contact => contact.name.toLowerCase().includes(name.toLowerCase()))];
+    return contactList.filter(contact => contact.name.toLowerCase().includes(name.toLowerCase()));
 }
 
 const openConversation = (name) => {
